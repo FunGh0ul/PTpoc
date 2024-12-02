@@ -1,4 +1,4 @@
-# PTpoc
+# Cheat sheet para pruebas de penetración
 ## Reconocimiento
 ### Nmap
 ```bash
