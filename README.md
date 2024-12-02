@@ -1,4 +1,3 @@
 # PTpoc
-```python
-def saludar():
-    print("Hola, Mundo")
+> .[!NOTE].
+> Reconocimiento
