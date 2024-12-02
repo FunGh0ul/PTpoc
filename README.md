@@ -1,3 +1,3 @@
 # PTpoc
-> .[!NOTE].
+> [!NOTE]
 > Reconocimiento
