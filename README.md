@@ -27,10 +27,11 @@ smbclient -L //<IP>/ -N
 ```bash
 smbmap -H <IP>
 ```
+```bash
+smbclient -L //<IP> -U <user>
+```
 ##### Sesión nula
 ```bash
 smbclient //<IP>/directorio -N 
 ```
-```bash
-smbclient -L //<IP> -U <user>
-```
+
