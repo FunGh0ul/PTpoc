@@ -13,7 +13,24 @@ gobuster dir -u http://<IP> -w /usr/share/wordlists/SecLists/Discovery/Web-Conte
 ```bash
 gobuster vhost --apend-domain -u http://<Dominio> -w /home/kali/SecList/Discovery/DNS/subdomain-top1million-110000.txt -r <IP>
 ```
-#### Fuzzing
+### Fuzzing
 ```bash
 wfuzz -c -w /usr/share/wordlist/SecList/Dicovery/... 'http://<IP>/index.php?FUZZ=../../../../etc/passwd'
+```
+### SMB
+```bash
+enum4linux -a <IP>
+```
+```bash
+smbclient -L //<IP>/ -N
+```
+```bash
+smbmap -H <IP>
+```
+##### Sesión nula
+```bash
+smbclient //<IP>/directorio -N 
+```
+```bash
+smbclient -L //<IP> -U <user>
 ```
