@@ -18,15 +18,19 @@ gobuster vhost --apend-domain -u http://<Dominio> -w /home/kali/SecList/Discover
 wfuzz -c -w /usr/share/wordlist/SecList/Dicovery/... 'http://<IP>/index.php?FUZZ=../../../../etc/passwd'
 ```
 ### SMB
+##### Enumeración
 ```bash
 enum4linux -a <IP>
 ```
+##### Listado con sesión nula
 ```bash
 smbclient -L //<IP>/ -N
 ```
+##### SMBmap
 ```bash
 smbmap -H <IP>
 ```
+##### Acceso con credenciales
 ```bash
 smbclient -L //<IP> -U <user>
 ```
